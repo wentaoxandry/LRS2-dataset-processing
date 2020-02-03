@@ -109,7 +109,7 @@ def set(info,s,audiodir,savedir, sourcedir):
                 utt.close()
 
             with open(wavdir, "a") as wav:
-                wav.writelines(recoid + ' ffmpeg -i ' + mp3dir + ' -f wav -ar 16000 -ab 16 - |' + '\n')
+                wav.writelines(title + ' ' + mp3dir + '\n')
                 wav.close()
 
 
