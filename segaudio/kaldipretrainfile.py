@@ -97,7 +97,7 @@ def set(file,s,audiodir, savedir):
 
                 with open(wavdir, "a") as wav:
                     wav.writelines(
-                        recoid + ' sox -c 1 -t wavpcm -e signed-integer ' + mp3dir + ' -t wavpcm - |' + '\n')
+                        title + ' ' + mp3dir + '\n')
                     wav.close()
 
         except:
